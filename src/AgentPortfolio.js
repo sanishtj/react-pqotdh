@@ -63,9 +63,11 @@ export default function AgentPortfolio() {
       {advisorPortfolio.images.profileImage && (
         <Grid item xs={mode === 'html' ? 2 : 12}>
           <PPIImg
-            src={advisorPortfolio.images.profileImage}
-            width={mode === 'html' ? '204px' : '180px'}
-            height={mode === 'html' ? '204px' : '180px'}
+            src={`${advisorPortfolio.images.profileImage}?${
+              mode === "html"
+                ? "w=240&h=240&fit=fill&f=face"
+                : "w=180&h=180&fit=fill&f=face"
+            }`}
           />
         </Grid>
       )}

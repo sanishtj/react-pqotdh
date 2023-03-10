@@ -72,7 +72,7 @@ export default function AgentPortfolio() {
       <Grid item xs={mode === 'html' ? 10 : 6}>
         <Grid container>
           <Grid item xs={12}>
-            <h3 className={['h3 Trebuchet bold']}>
+            <h3 className="h3 Trebuchet bold">
               {advisorPortfolio.advisorInformation.firstName}&nbsp;
               {advisorPortfolio.advisorInformation.lastName}
               {advisorPortfolio.advisorInformation.designations && (
@@ -82,14 +82,14 @@ export default function AgentPortfolio() {
           </Grid>
           {advisorPortfolio.advisorInformation.jobTitle && (
             <Grid item xs={12}>
-              <h4 className={['h4 Trebuchet bold']} style={{ padding: 0 }}>
+              <h4 className="h4 Trebuchet bold" style={{ padding: 0 }}>
                 {advisorPortfolio.advisorInformation.jobTitle}
               </h4>
             </Grid>
           )}
           {advisorPortfolio.about.biography && (
             <Grid item xs={12}>
-              <span className={['p Georgia']}>
+              <span className="p Georgia">
                 {advisorPortfolio.about.biography}
               </span>
             </Grid>
@@ -98,18 +98,18 @@ export default function AgentPortfolio() {
       </Grid>
       {advisorPortfolio.advisorInformation.email && (
         <Grid item xs={12}>
-          <span className={['p Trebuchet bold headingColor']}>Email:</span>
+          <span className="p Trebuchet bold headingColor">Email:</span>
           &nbsp;
-          <span className={['p Trebuchet']}>
+          <span className="p Trebuchet">
             {advisorPortfolio.advisorInformation.email}:
           </span>
         </Grid>
       )}
       {advisorPortfolio.advisorInformation.phone && (
         <Grid item xs={12}>
-          <span className={['p Trebuchet bold headingColor']}>Phone:</span>
+          <span className="p Trebuchet bold headingColor">Phone:</span>
           &nbsp;
-          <span className={['p Trebuchet']}>
+          <span className="p Trebuchet">
             {advisorPortfolio.advisorInformation.phone}
             {advisorPortfolio.advisorInformation.extension && (
               <>
@@ -122,10 +122,10 @@ export default function AgentPortfolio() {
       )}
       {advisorPortfolio.socialMediaandLinks.companyWebsite && (
         <Grid item xs={12}>
-          <span className={['p Trebuchet bold headingColor']}>Website:</span>
+          <span className="p Trebuchet bold headingColor">Website:</span>
           &nbsp;
           <a
-            className={['p Trebuchet link']}
+            className="p Trebuchet link"
             href={makeNavigatableURL(
               advisorPortfolio.socialMediaandLinks.companyWebsite
             )}
@@ -141,27 +141,27 @@ export default function AgentPortfolio() {
       {advisorPortfolio.businessInformation.address && (
         <Grid container item xs={12}>
           <Grid item xs={12}>
-            <span className={['p Trebuchet bold headingColor']}>Address:</span>
+            <span className="p Trebuchet bold headingColor">Address:</span>
           </Grid>
           <Grid item xs={12}>
-            <span className={['p Trebuchet']}>
+            <span className="p Trebuchet">
               {advisorPortfolio.businessInformation.businessName}
             </span>
           </Grid>
           <Grid item xs={12}>
-            <span className={['p Trebuchet']}>
+            <span className="p Trebuchet">
               {advisorPortfolio.businessInformation.address}
             </span>
           </Grid>
           {advisorPortfolio.businessInformation.suite && (
             <Grid item xs={12}>
-              <span className={['p Trebuchet']}>
+              <span className="p Trebuchet">
                 {advisorPortfolio.businessInformation.suite}
               </span>
             </Grid>
           )}
           <Grid item xs={12}>
-            <span className={['p Trebuchet']}>
+            <span className="p Trebuchet">
               {advisorPortfolio.businessInformation.city},&nbsp;
               {advisorPortfolio.businessInformation.province}&nbsp;
               {advisorPortfolio.businessInformation.postalCode}
@@ -176,9 +176,7 @@ export default function AgentPortfolio() {
         advisorPortfolio.socialMediaandLinks.youTube) && (
         <Grid container item xs={12} spacing={1}>
           <Grid item xs={12}>
-            <span className={['p Trebuchet bold headingColor']}>
-              Social Media:
-            </span>
+            <span className="p Trebuchet bold headingColor">Social Media:</span>
           </Grid>
           {advisorPortfolio.socialMediaandLinks.twitter && (
             <Grid container item xs={12} spacing={1} alignItems="center">
@@ -187,7 +185,7 @@ export default function AgentPortfolio() {
               </Grid>
               <Grid item>
                 <a
-                  className={['p Trebuchet link']}
+                  className="p Trebuchet link"
                   href={makeNavigatableURL(
                     advisorPortfolio.socialMediaandLinks.twitter
                   )}
@@ -208,7 +206,7 @@ export default function AgentPortfolio() {
               </Grid>
               <Grid item>
                 <a
-                  className={['p Trebuchet link']}
+                  className="p Trebuchet link"
                   href={makeNavigatableURL(
                     advisorPortfolio.socialMediaandLinks.facebook
                   )}
@@ -229,7 +227,7 @@ export default function AgentPortfolio() {
               </Grid>
               <Grid item>
                 <a
-                  className={['p Trebuchet link']}
+                  className="p Trebuchet link"
                   href={makeNavigatableURL(
                     advisorPortfolio.socialMediaandLinks.linkedIn
                   )}
@@ -250,7 +248,7 @@ export default function AgentPortfolio() {
               </Grid>
               <Grid item>
                 <a
-                  className={['p Trebuchet link']}
+                  className="p Trebuchet link"
                   href={makeNavigatableURL(
                     advisorPortfolio.socialMediaandLinks.instagram
                   )}
@@ -272,7 +270,7 @@ export default function AgentPortfolio() {
               </Grid>
               <Grid item>
                 <a
-                  className={['p Trebuchet link']}
+                  className="p Trebuchet link"
                   href={makeNavigatableURL(
                     advisorPortfolio.socialMediaandLinks.youTube
                   )}
